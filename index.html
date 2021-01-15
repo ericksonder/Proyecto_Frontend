@@ -9,42 +9,49 @@
     <title>Document</title>
   </head>
   <body>
+
+    <div class="hero">
+
       <!-- Cabecera -->
-    <header class="header">
-      <div class="img">
-          <h1>LOGO</h1>
-      </div>
-     <div class="navegacion">
-        <nav>
-            <ul class="header_list">
-              <li><a class="list_link" href="#">Home</a></li>
-              <li><a class="list_link" href="#">Servicios</a></li>
-              <li><a class="list_link" href="#">Contáctamos</a></li>
-            </ul>
-          </nav>
-          <div class="line"></div>
-          <div class="header_btn">
-              <button class="header_button1">Ingresar</button>
-              <button class="header_button2">Registrarse</button>
-          </div>
-     </div>
-    </header>
-    <!-- Primera sección de la pagina web -->
-    <main>
-        <div class="section1">
-            <div class="columna1"> 
-                <h3 class="info_subtitulo">Sed ut perspiciatis unde omnis iste natus sit</h3>
-                <p class="info_parrafo">Etd quasi architecto beatae vitae dicta sunt explicabo</p>
-                <div class="info_button">Reserva tu citas</div>
-            </div>
-            <div class="columna2">
-                <figure class="img__banner">
-                    <img src="./img/dog-photo.png" alt="">
-                </figure>
-            </div>
+      <header class="header">
+
+        <div class="header__logo">
+            <h1>LOGO</h1>
         </div>
-        
-    </main>
+        <nav class="header__nav">
+              <ul class="header__list">
+                <li><a class="list__link" href="#">Home</a></li>
+                <li><a class="list__link" href="#">Servicios</a></li>
+                <li><a class="list__link" href="#">Contáctamos</a></li>
+              </ul>
+              <div class="line"></div>
+        </nav>
+        <div class="header__btn">
+                <button class="header__button1">Ingresar</button>
+                <button class="header__button2">Registrarse</button>
+        </div>
+      </header>
+
+      <!-- Primera sección de la pagina web -->
+      <div class="section1">
+        <div class="columna1"> 
+            <h3 class="info_subtitulo">Sed ut perspiciatis unde omnis iste natus sit</h3>
+            <p class="info_parrafo">Etd quasi architecto beatae vitae dicta sunt explicabo</p>
+            <div class="info_button">Reserva tu citas</div>
+        </div>
+        <div class="columna2">
+            <figure>
+                <img class="img__banner" src="./img/dog-photo.png" alt="">
+            </figure>
+        </div>
+      </div>
+
+
+    </div>
+      
+      
+  </main>
+
 
     <script src="index.js"></script>
   </body>

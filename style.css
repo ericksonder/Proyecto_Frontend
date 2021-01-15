@@ -1,54 +1,77 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+:root {
+    --color-primary: #00ADFD;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-body {
-    max-width: 1440px;
+    font-size: 16px;
 }
 
-/* CABECERA */
+/* BACKGROUND SECTION 1 */
+.hero {
+    background-color: var(--color-primary);
+    height: 100vh;
+    max-height: 1080px;
+}
 
+/* HEADER */
 .header {
     max-width: 1440px;
+    padding: 0 1em;
     height: 89px;
+    margin: 0 auto;
     display: flex;
-    background-color:  #00ADFD;
     align-items: center;
-    justify-content: space-around;
 }
-.navegacion {
+
+/*LOGO*/
+.header__logo {
+    flex: 1;    
+}
+
+/*NAVBAR*/
+.header__nav {
+    flex: 3;
     display: flex;
-    gap: 2em;
+    justify-content: center;
 }
+
+.header__list {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
 .line {
     width: 1px;
-    background-color: #C4C4C4;
-}
-
-/* LISTA DE NAVEGACIÓN */
-
-.header_list {
-    display: flex;
-    gap: 2.5em;
-    list-style: none;
-}
-.list_link {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 1em;
+    background-color: white;
+    position: relative;
+    left: 8em;
 }
 
 /* BOTONES REGISTER Y LOGIN */
+.header__btn {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
 
-.header_btn button{
-    width: 135px;
-    height: 35px;
+.header__btn button{
+    width: 10em;
+    height: 2.6em;
     border-radius: 30px;
     font-weight: 700;
     border: none;
@@ -56,28 +79,27 @@ body {
     cursor: pointer;
 }
 
-.header_button1 {
+.header__button1 {
     background-color: #00ADFD ;
     color: #ffffff;
 }
-.header_button2 {
+
+.header__button2 {
     background-color: #ffffff;
     color: #00ADFD;
 }
-main{
-    max-width: 1440px;
 
-}
-
+/*  SECCION 1  */
 .section1 {
     max-width: 1440px;
-
+    margin: 0 auto;
+    height: calc(100% - 89px);
     display: flex;
-     background-image: url("./img/background.png");
+    /* background-image: url("./img/background.png"); */
    /* background-repeat: no-repeat;
-    background-size: contain; */
-    flex-wrap: wrap;    
+    background-size: contain; */ 
     justify-content: space-around;
+    align-items: center;
 }
 
 .columna1{
@@ -86,14 +108,14 @@ main{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 15px 30px;
     gap: 2em;
+    padding: 0 1em;
 }
 .info_subtitulo {
     text-align: left;
-    width: 600px;
+    width: 80%;
     font-weight: 900;
-    font-size: 45px;
+    font-size: 2.8em;
     color: #ffffff;
 }
 .info_parrafo {
@@ -105,8 +127,8 @@ main{
 .info_button {
     border-radius: 1em;
     background-color: #ffffff;
-    width: 200px;
-    padding: 8px;
+    width: 12.5em;
+    padding: .5em;
     font-size: 700;
     color: #00ADFD;
     cursor: pointer;
@@ -115,5 +137,5 @@ main{
     min-width: 50%;
 }
 .img__banner {
-width: 50%;
+  width: 80%;
 }
